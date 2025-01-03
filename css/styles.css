@@ -1020,6 +1020,7 @@ footer {
     font-size: 2.5rem;
     color: #c8a97e;
     margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .service-card h3 {
@@ -1032,6 +1033,49 @@ footer {
 .service-card p {
     color: #666;
     line-height: 1.6;
+}
+
+/* Bounce effect on hover */
+.service-card:hover .service-icon {
+    animation: iconBounce 0.8s ease infinite;
+    color: #dfc298;
+}
+
+/* Rotate effect for plane icon */
+.service-card:hover .fa-plane {
+    animation: planeFly 1.2s ease infinite;
+}
+
+/* Special animation for support icon */
+.service-card:hover .fa-headset {
+    animation: headsetWiggle 1s ease infinite;
+}
+
+/* Special animation for events icon */
+.service-card:hover .fa-glass-cheers {
+    animation: celebrate 0.8s ease infinite;
+}
+
+/* Define the animations */
+@keyframes iconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes planeFly {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+
+@keyframes headsetWiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+@keyframes celebrate {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(10deg) scale(1.1); }
 }
 
 /* Responsive Design */
