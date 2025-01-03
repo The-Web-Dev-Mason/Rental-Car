@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Car Rental Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="your-logo.png" alt="Car Rental Logo">
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Car animation container -->
+        <div class="car-animation">
+            <div class="car car1">
+                <img src="Img/car-1.jpg" alt="Luxury Car 1">
+            </div>
+            <div class="car car2">
+                <img src="Img/car-2.jpg" alt="Luxury Car 2">
+            </div>
+            <div class="car car3">
+                <img src="Img/car-3.jpg" alt="Luxury Car 3">
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Premium Car Rental Services</h1>
+            <p>Find your perfect ride for any occasion</p>
+            <div class="search-box">
+                <form action="#" method="POST">
+                    <select name="location" required>
+                        <option value="" disabled selected>Select Location</option>
+                        <option value="london">London</option>
+                        <option value="manchester">Manchester</option>
+                        <option value="birmingham">Birmingham</option>
+                        <option value="liverpool">Liverpool</option>
+                        <option value="edinburgh">Edinburgh</option>
+                        <option value="glasgow">Glasgow</option>
+                        <option value="leeds">Leeds</option>
+                        <option value="bristol">Bristol</option>
+                        <option value="cardiff">Cardiff</option>
+                        <option value="newcastle">Newcastle</option>
+                    </select>
+                    
+                    <div class="date-input">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date" name="start-date" required min="<?php echo date('Y-m-d'); ?>">
+                    </div>
+                    
+                    <div class="date-input">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date" name="end-date" required>
+                    </div>
+                    
+                    <button type="submit">Search Cars</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles Section -->
+    <section id="vehicles" class="featured-vehicles">
+        <h2>Our Featured Vehicles</h2>
+        <div class="vehicle-grid">
+            <!-- 1. Aston Martin -->
+            <div class="vehicle-card">
+                <img src="Img/car-1.jpg" alt="Aston Martin">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>Aston Martin</h3>
+                        <p class="price">£200/day</p>
+                        <ul class="features">
+                            <li><i class="fas fa-user"></i> 2 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                        </ul>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+
+            <!-- 2. Range Rover Sport -->
+            <div class="vehicle-card">
+                <img src="Img/car-2.jpg" alt="Range Rover Sport">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>Range Rover Sport</h3>
+                        <p class="price">£180/day</p>
+                        <ul class="features">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                        </ul>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+
+            <!-- 3. Mercedes S-Class -->
+            <div class="vehicle-card">
+                <img src="Img/car-3.jpg" alt="Mercedes S-Class">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>Mercedes S-Class</h3>
+                        <p class="price">£150/day</p>
+                        <ul class="features">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                        </ul>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+
+            <!-- 4. Bentley Continental GT -->
+            <div class="vehicle-card">
+                <img src="Img/car-4.jpg" alt="Bentley Continental GT">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>Bentley Continental GT</h3>
+                        <p class="price">£250/day</p>
+                        <ul class="features">
+                            <li><i class="fas fa-user"></i> 4 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                        </ul>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+
+            <!-- 5. Rolls-Royce Ghost -->
+            <div class="vehicle-card">
+                <img src="Img/car-5.jpg" alt="Rolls-Royce Ghost">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>Rolls-Royce Ghost</h3>
+                        <p class="price">£300/day</p>
+                        <ul class="features">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                        </ul>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+
+            <!-- 6. Lamborghini Urus -->
+            <div class="vehicle-card">
+                <img src="Img/car-6.jpg" alt="Lamborghini Urus">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>Lamborghini Urus</h3>
+                        <p class="price">£275/day</p>
+                        <ul class="features">
+                            <li><i class="fas fa-user"></i> 5 Seats</li>
+                            <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                            <li><i class="fas fa-cog"></i> Automatic</li>
+                        </ul>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-car-side"></i>
+                <h3>Latest Models</h3>
+                <p>Our fleet consists of the newest and most prestigious vehicles.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-pound-sign"></i>
+                <h3>Best Rates</h3>
+                <p>Competitive pricing with no hidden fees or charges.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock customer service for your convenience.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Full Insurance</h3>
+                <p>Comprehensive insurance coverage for peace of mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Our Luxury Fleet</h2>
+                    <div class="about-subtitle">Experience Excellence in Every Journey</div>
+                    <p>With over a decade of expertise in luxury car rentals, we pride ourselves on delivering unparalleled service and the most prestigious vehicles to our distinguished clients. Our commitment to excellence ensures that every journey becomes an unforgettable experience.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="feature-text">
+                                <h4>Premium Fleet</h4>
+                                <p>Latest models from world-renowned luxury brands</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="feature-text">
+                                <h4>24/7 Service</h4>
+                                <p>Round-the-clock support and assistance</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="feature-text">
+                                <h4>Flexible Pickup</h4>
+                                <p>Convenient delivery to your location</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="feature-text">
+                                <h4>Full Insurance</h4>
+                                <p>Comprehensive coverage for peace of mind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="image-grid">
+                        <img src="Img/about-1.jpg" alt="Luxury Car Interior" class="about-img-1">
+                        <img src="Img/about-2.jpg" alt="Luxury Car Exterior" class="about-img-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <h2>Where to Find Us</h2>
+        <div class="location-content">
+            <div class="map">
+                <!-- Replace with your Google Maps embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Location</h3>
+                    <p>123 Luxury Lane</p>
+                    <p>London, UK SW1A 1AA</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+44 20 1234 5678</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@luxurycarrental.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="Img/client1.jpg" alt="James Wilson" class="client-image">
+                    <div class="client-info">
+                        <h3>James Wilson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Exceptional service! The Bentley Continental GT was immaculate, and the staff went above and beyond. Will definitely be using their services again."</p>
+                <div class="google-review">
+                    <i class="fab fa-google"></i> Verified Google Review
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="Img/client2.jpg" alt="Sarah Thompson" class="client-image">
+                    <div class="client-info">
+                        <h3>Sarah Thompson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Made my wedding day perfect with their Rolls-Royce Ghost. The chauffeur was professional, and the car was stunning. Highly recommend!"</p>
+                <div class="google-review">
+                    <i class="fab fa-google"></i> Verified Google Review
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="Img/client3.jpg" alt="Michael Chen" class="client-image">
+                    <div class="client-info">
+                        <h3>Michael Chen</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>"Rented the Range Rover Sport for a weekend trip. The booking process was seamless, and the vehicle was in perfect condition. Great experience!"</p>
+                <div class="google-review">
+                    <i class="fab fa-google"></i> Verified Google Review
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#vehicles">Vehicles</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +44 20 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> info@luxurycarrental.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> London, UK</p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 9am - 6pm</p>
+                <p>Saturday: 10am - 4pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxury Car Rental. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
